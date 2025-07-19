@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: jdgz0q4bb-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: jdgz0q4bb-java-quarkus 
+  name: jdgz0q4bb-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: jdgz0q4bb-java-quarkus 
